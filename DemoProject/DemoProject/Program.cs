@@ -1,15 +1,20 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DemoProject
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
+            double a = double.Parse(Console.ReadLine());
+            double b = double.Parse(Console.ReadLine());
+            Console.WriteLine("The area is:");
+            Console.WriteLine(GetRegtangleArea(a, b));
+        }
+
+        public static double GetRegtangleArea(double a, double b)
+        {
+            return a * b;
         }
     }
 }
